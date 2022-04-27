@@ -39,7 +39,7 @@ with header:
     st.text('Business improvization model')
 with dataset:
     st.header('Dataset')
-    df=pd.read_csv('data/advertising.csv')
+    df=pd.read_csv('advertising.csv')
     if st.checkbox("Show dataset"):
        st.dataframe(df.head(20))
     st.write(df.describe())
